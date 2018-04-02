@@ -1,0 +1,21 @@
+## I use ubuntu16.4, if your system is others, please install with offical html.
+### install nodejs: https://nodejs.org/en/
+apt-get install nodejs // version default is 0.4.26+
+
+### install solc: http://solidity.readthedocs.io/en/v0.4.21/installing-solidity.html
+sudo add-apt-repository ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install solc
+
+### web3.js
+apt-get install npm
+mkdir web3_new
+cd we3_new
+npm init -f
+npm install web3.js
+
+### install geth
+apt-get install geth
+
+### start geth
+geth --datadir ~/ethereum --networkid 115655 --rpc --rpcport 5587 --rpcaddr localhost console
